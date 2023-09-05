@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>RegistrAPP</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/inicio" fill="clear">
+        Logout
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <h1 class="bien">Bienvenido a RegistrAPP</h1>
+  <ion-list>
+    <ion-item *ngFor="let c of componentes"
+      [routerLink]="c.redirecTo"
+      detail="true"
+      class="item">
+      <ion-icon [name]="c.icon" slot="start" ></ion-icon>
+      {{c.name}}
+    </ion-item>
+  </ion-list>
+</ion-content>
