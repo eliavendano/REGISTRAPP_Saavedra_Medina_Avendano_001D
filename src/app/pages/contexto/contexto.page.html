@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="medium" >
     <ion-buttons slot="start">
       <ion-button (click)="toggleMenu()">
         <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
@@ -8,20 +8,20 @@
     <ion-title>contexto</ion-title>
     <ion-buttons slot="end">
       <ion-back-button 
-        defaultHref="/"
+        defaultHref="/home"
         text="back">
       </ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-card>
+<ion-content color="warning">
+  <ion-card color="medium">
     <img src="assets/libros.png" alt="Mi Imagen">
     <ion-card-header>
-      <ion-card-title>Funcionalidad de la APP</ion-card-title>
+      <ion-card-title style="color: black;">Funcionalidad de la APP</ion-card-title>
     </ion-card-header>
-    <ion-card-content>
+    <ion-card-content style="color: black;">
       la aplicación "RegistrAPP" aborda las dificultades relacionadas 
       con el registro de asistencia en clases presenciales 
       , permitiendo a los alumnos registrar su asistencia de manera eficiente

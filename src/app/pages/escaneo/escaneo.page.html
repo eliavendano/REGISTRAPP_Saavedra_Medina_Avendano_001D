@@ -1,5 +1,5 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar color="medium">
     <ion-buttons slot="start">
       <ion-button (click)="toggleMenu()">
         <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
@@ -8,13 +8,13 @@
     <ion-title slot="start">Escaneo</ion-title>
     <ion-buttons slot="end">
       <ion-back-button 
-        defaultHref="/"
+        defaultHref="/home"
         text="back">
       </ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="fondo" [fullscreen]="true">
+<ion-content color="warning">
   <img src="assets/simulacioncamara.jpg" class="fondo">
 </ion-content>
