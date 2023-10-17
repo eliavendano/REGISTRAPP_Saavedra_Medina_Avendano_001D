@@ -4,7 +4,11 @@ Segunda entre de Aplicaciones Mobiles (Roni Saavedra, Bastian Medina y Elias Ave
 Comandos que ejecutar antes de iniciar el ionic:
 ```
 npm install -g @ionic/cli@6
+```
+```
 npm install -g @angular/cli
+```
+```
 npm install @ionic/storage-angular
 ```
 
