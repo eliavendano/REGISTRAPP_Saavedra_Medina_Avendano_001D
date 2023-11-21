@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Dias feriados </ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button 
+        defaultHref="/home"
+        text="back">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="warning">
+  <ion-list>
+    <ion-item color="warning" *ngFor="let dia of dias">
+      <ion-label>
+        <h2>{{ dia.title }}</h2>
+        <p><strong>Tipo:</strong> {{ dia.type }}</p>
+        <p><strong>Fecha:</strong> {{ dia.date }}</p>
+        <p><strong>Inalienable:</strong> {{ dia.inalienable ? 'Sí' : 'No' }}</p>
+        <p><strong>Extra:</strong> {{ dia.extra }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
