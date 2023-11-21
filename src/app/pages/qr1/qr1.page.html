@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>qr1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-text>
+    <h1>Generar qr</h1>
+  </ion-text>
+
+  <!-- Botón para recuperar datos de Firebase -->
+  <ion-button (click)="obtenerDatosDesdeFirebase()">Obtener Datos de Firebase</ion-button>
+
+  <!-- Mostrar datos recuperados y generar código QR -->
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="texto" disabled></ion-input>
+  </ion-item>
+
+  <br>
+  <br>
+  <qrcode [qrdata]="texto" [width]="400"></qrcode>
+</ion-content>
