@@ -1,5 +1,5 @@
 # REGISTRAPP_Savedra_Medina_Avendano_001D
-Segunda entre de Aplicaciones Mobiles (Roni Saavedra, Bastian Medina y Elias Avendaño)
+Tercera entrega de Aplicaciones Mobiles (Roni Saavedra, Bastian Medina y Elias Avendaño)
 
 Comandos que ejecutar antes de iniciar el ionic:
 ```
