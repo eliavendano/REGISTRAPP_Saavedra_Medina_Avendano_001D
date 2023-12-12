@@ -1,0 +1,36 @@
+ion-toolbar{
+    background-color: var(--ion-color-light);
+}
+
+ion-content{
+    background-color: var(--ion-color-light)
+}
+ion-list{
+    background-color: var(--ion-color-light);
+}
+ion-item {
+    background-color: var(--ion-color-light);
+    border-radius: 10px;   
+}
+.titulo {
+    text-align: center;
+  }
+.texto {
+    text-align: center;
+    color: white;
+}
+.bien{
+    text-align: center;
+    color: white;
+}
+.item{
+    margin-top: 20px;
+    color: white;
+}
+.custom-center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
