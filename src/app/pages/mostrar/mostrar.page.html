@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Mis Datos </ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button 
+        defaultHref="/home"
+        text="back">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="warning" >
+  <ion-list color="warning" >
+    <ion-item color="medium">
+      <ion-label>Nombre:</ion-label>
+      <ion-note slot="end">{{ datosUsuario.nombre }}</ion-note>
+    </ion-item>
+    <ion-item color="medium">
+      <ion-label>Rut:</ion-label>
+      <ion-note slot="end">{{ datosUsuario.rut }}</ion-note>
+    </ion-item>
+    <ion-item color="medium">
+      <ion-label>Contraseña:</ion-label>
+      <ion-note slot="end">{{ datosUsuario.password }}</ion-note>
+    </ion-item>
+  </ion-list>
+  <br>
+  <ion-label>Cambiar contrazeña</ion-label>
+  <form [formGroup]="contraForm">
+    <ion-item color="medium">
+      <ion-input  type="text" required label="Nueva Contraseña:" type="password"placeholder="*********"></ion-input>
+    </ion-item>
+    <ion-item color="medium">
+      <ion-input  type="text" formControlName="nuevacontra" required label="Confirmar Contraseña:" type="password"placeholder="*********"></ion-input>
+    </ion-item>
+    <ion-button (click)="cambiarContra()" shape="round" expand="block">
+      Cambiar Contraseña
+    </ion-button>
+  </form>
+</ion-content>
