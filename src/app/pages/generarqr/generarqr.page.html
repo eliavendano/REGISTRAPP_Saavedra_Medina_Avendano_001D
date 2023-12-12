@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>generarqr</ion-title>
+  </ion-toolbar>
+</ion-header>
+  
+<ion-content [fullscreen]="true">
+  <ion-text>
+    <h1>Generar qr</h1>
+  </ion-text>
+  <br>
+  <qrcode [qrdata]="texto" [width]="400" ></qrcode>
+</ion-content>

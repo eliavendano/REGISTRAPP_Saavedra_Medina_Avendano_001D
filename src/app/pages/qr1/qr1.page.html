@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>qr1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-text>
+    <h1>Generar qr</h1>
+  </ion-text>
+
+  <!-- Botón para recuperar datos de Firebase -->
+  <ion-button (click)="obtenerDatosDesdeFirebase()">Generar QR</ion-button>
+
+  <!-- Mostrar datos recuperados y generar código QR -->
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="texto" disabled></ion-input>
+  </ion-item>
+
+  <br>
+  <br>
+  <qrcode [qrdata]="qrdata" [width]="400" *ngIf="qrdata.length"></qrcode>
+  
+  <ion-content>
+    <h1>Lista de la clase:</h1>
+    <ion-button (click)=" obtenerDatos() " class="link"shape="round" expand="block">
+      Actualizar 
+    </ion-button>
+    <ul>
+      <!-- Utiliza *ngFor para iterar sobre la lista de nombresDocumentos -->
+      <li *ngFor="let nombreDocumento of nombresDocumentos">
+        {{ nombreDocumento }}
+      </li>
+    </ul>
+  </ion-content>
+
+</ion-content>
